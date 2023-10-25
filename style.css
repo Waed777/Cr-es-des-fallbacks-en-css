@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    background-color: rgb(79, 185, 227);
+    padding: 10px;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .item {
+    border-radius: 5px;
+    background-color: rgb(207, 232, 220);
+    padding: 1em;
+    border: 2px solid #0077ff; /* Bordure bleue */
+  }
+  
+  @supports (display: grid) {
+    .item {
+      width: auto;
+    }
+  }
+  
+  
